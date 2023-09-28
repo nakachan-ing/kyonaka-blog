@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './index.module.css';
+import HeaderLogo from '../../public/blog-logo.jpg';
 
 export default function Header() {
   return (
@@ -15,7 +16,7 @@ export default function Header() {
           priority
         /> */}
         <Image
-          src="https://s4.aconvert.com/convert/p3r68-cdx67/aauh1-ezfrd.svg"
+          src={HeaderLogo}
           alt="Kyonaka Blog"
           className={styles.logo}
           width={500}
